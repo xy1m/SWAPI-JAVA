@@ -1,11 +1,12 @@
 package com.swapi.sw;
 
-import android.os.Build;
 import retrofit.client.OkClient;
 import retrofit.client.Request;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+
+import com.swapi.APIConstants;
 
 /**
  * Created by Oleur on 23/12/2014.
@@ -20,7 +21,7 @@ public class StarWarsOkClient extends OkClient {
     @Override
     protected HttpURLConnection openConnection(Request request) throws IOException {
         HttpURLConnection connection = super.openConnection(request);
-        connection.setRequestProperty("User-Agent", "swapi-android-" + Build.VERSION.RELEASE);
+        connection.setRequestProperty("User-Agent", "swapi-Java-" + APIConstants.APPLICATION_NAME);
         return connection;
     }
 }
