@@ -31,10 +31,14 @@ public static void main(String[] args)
 ```
 
 # How to run sample app from updated build.gradle
-```gradle run
 ```
+gradle run
+```
+
 Or if you want to run without gradle you could run
-```gradle assemble
+
+```
+gradle assemble
 gradle copyDeps
 cd build
 java -cp "libs/*" Main
