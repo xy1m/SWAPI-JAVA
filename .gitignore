@@ -4,14 +4,11 @@ bin/
 gen/
 
 # Gradle files
-.gradle/
-gradlew
-gradlew.bat
 build/
-gradle/
 
 # Intellij Files
 .idea/
+*.iml
 .DS_Store
 
 # Local configuration file (sdk path, etc)
